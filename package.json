@@ -1,0 +1,116 @@
+{
+	"$schema": "https://schema.kunkun.sh",
+	"name": "image-processing",
+	"version": "0.0.3",
+	"kunkun": {
+		"name": "TODO: Change Display Name",
+		"shortDescription": "A Custom UI template for sveltekit",
+		"longDescription": "A Custom UI template for sveltekit",
+		"identifier": "image-processing",
+		"icon": {
+			"type": "iconify",
+			"value": "lucide:image"
+		},
+		"demoImages": [],
+		"permissions": [
+			"dialog:all",
+			"clipboard:read-files",
+			"notification:all",
+			"system:fs",
+			{
+				"permission": "shell:deno:spawn",
+				"allow": [
+					{
+						"path": "$EXTENSION/deno-src/index.ts",
+						"env": "*",
+						"ffi": "*",
+						"read": "*",
+						"sys": "*",
+						"run": "*"
+					}
+				]
+			},
+			"shell:stdin-write",
+			"shell:kill"
+		],
+		"customUiCmds": [
+			{
+				"name": "Smart Edit Image Capture Date",
+				"main": "/",
+				"devMain": "http://localhost:5173/",
+				"dist": "build",
+				"cmds": [],
+				"window": {
+					"title": "Smart Edit Image Capture Date"
+				}
+			}
+		],
+		"templateUiCmds": [
+			{
+				"name": "Image Info",
+				"cmds": [],
+				"main": "dist/image-info.js"
+			}
+		]
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"dev:template": "bun scripts/build-template-ext.ts dev",
+		"build:template": "bun scripts/build-template-ext.ts",
+		"build:custom": "vite build",
+		"build": "bun scripts/build.ts",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@hk/photographer-toolbox": "npm:@jsr/hk__photographer-toolbox@^0.1.12",
+		"@internationalized/date": "^3.6.0",
+		"@kksh/api": "^0.0.48",
+		"@kksh/svelte5": "^0.1.12",
+		"@tanstack/table-core": "^8.20.5",
+		"bits-ui": "1.0.0-next.77",
+		"clsx": "^2.1.1",
+		"embla-carousel-svelte": "^8.5.2",
+		"formsnap": "^2.0.0",
+		"lucide-svelte": "^0.469.0",
+		"mode-watcher": "^0.5.0",
+		"paneforge": "^0.0.6",
+		"svelte-radix": "^2.0.1",
+		"tailwind-merge": "^2.6.0",
+		"tailwind-variants": "^0.3.0",
+		"valibot": "^1.0.0-beta.11",
+		"vaul-svelte": "^0.3.2"
+	},
+	"devDependencies": {
+		"@sveltejs/adapter-auto": "^3.3.1",
+		"@sveltejs/adapter-static": "^3.0.8",
+		"@sveltejs/kit": "^2.15.2",
+		"@sveltejs/vite-plugin-svelte": "^5.0.3",
+		"@tailwindcss/typography": "^0.5.16",
+		"@types/eslint": "^9.6.1",
+		"autoprefixer": "^10.4.20",
+		"eslint": "^9.17.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.46.1",
+		"globals": "^15.14.0",
+		"postcss": "^8.4.49",
+		"prettier": "^3.4.2",
+		"prettier-plugin-svelte": "^3.3.2",
+		"prettier-plugin-tailwindcss": "^0.6.9",
+		"svelte": "^5.16.6",
+		"svelte-check": "^4.1.1",
+		"tailwindcss": "^3.4.17",
+		"typescript": "^5.7.2",
+		"typescript-eslint": "^8.19.1",
+		"vite": "^6.0.7"
+	},
+	"type": "module",
+	"files": [
+		"build",
+		".gitignore"
+	],
+	"packageManager": "pnpm@9.15.3"
+}
