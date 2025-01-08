@@ -4,6 +4,6 @@
 	"license": "MIT",
 	"exports": "./mod.ts",
 	"publish": {
-		"include": ["build", "dist"]
+		"include": ["build", "dist", "mod.ts"]
 	}
 }
