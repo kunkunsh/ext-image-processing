@@ -1,11 +1,11 @@
 {
 	"$schema": "https://schema.kunkun.sh",
 	"name": "image-processing",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"kunkun": {
-		"name": "TODO: Change Display Name",
-		"shortDescription": "A Custom UI template for sveltekit",
-		"longDescription": "A Custom UI template for sveltekit",
+		"name": "Image Processing",
+		"shortDescription": "Image Processing",
+		"longDescription": "Image Processing commands. Read image metadata, batch update capture date, etc.",
 		"identifier": "image-processing",
 		"icon": {
 			"type": "iconify",
