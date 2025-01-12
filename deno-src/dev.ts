@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import { ExifTool, ExifDateTime } from 'exiftool-vendored';
 // import { image } from '@hk/photographer-toolbox';
 

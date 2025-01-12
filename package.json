@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schema.kunkun.sh",
 	"name": "image-processing",
-	"version": "0.0.13",
+	"version": "0.0.14",
 	"kunkun": {
 		"name": "Image Processing",
 		"shortDescription": "Image Processing",

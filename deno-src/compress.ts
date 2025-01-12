@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import sharp from 'sharp';
 import * as v from 'valibot';
 

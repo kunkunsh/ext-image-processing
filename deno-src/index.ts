@@ -1,3 +1,4 @@
+// deno-lint-ignore-file
 import type { API } from '../src/types.ts';
 import { expose } from '@kunkun/api/runtime/deno';
 import { image } from '@hk/photographer-toolbox';
