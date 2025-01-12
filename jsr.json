@@ -1,9 +1,9 @@
 {
 	"name": "@kunkun/ext-image-processing",
-	"version": "0.0.7",
+	"version": "0.0.8",
 	"license": "MIT",
 	"exports": "./mod.ts",
 	"publish": {
-		"include": ["build", "dist", "mod.ts", "package.json", "README.md", "LICENSE"]
+		"include": ["build", "dist", "mod.ts", "package.json", "README.md", "LICENSE", "deno-src"]
 	}
 }
