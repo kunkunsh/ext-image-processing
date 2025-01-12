@@ -1,5 +1,3 @@
-// deno-fmt-ignore-file
-// deno-lint-ignore-file
 import { ExifDateTime } from 'exiftool-vendored';
 import type { ImageMetadata } from '@hk/photographer-toolbox/types';
 import { ImageMetadataMod } from '../src/types.ts';

@@ -1,6 +1,6 @@
 {
 	"tasks": {
-		"dev": "deno run --watch main.ts"
+		"dev": "deno run --watch dev.ts"
 	},
 	"imports": {
 		"@hk/photographer-toolbox": "jsr:@hk/photographer-toolbox@^0.1.12",

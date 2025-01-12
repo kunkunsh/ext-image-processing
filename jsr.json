@@ -1,7 +1,9 @@
 {
+	"$schema": "https://jsr.io/schema/config-file.v1.json",
 	"name": "@kunkun/ext-image-processing",
-	"version": "0.0.17",
+	"version": "0.0.18",
 	"license": "MIT",
+	"lint": false,
 	"exports": "./mod.ts",
 	"publish": {
 		"include": [
@@ -15,9 +17,6 @@
 			"src/types.ts",
 			".npmrc"
 		]
-	},
-	"tasks": {
-		"dev": "deno run --watch main.ts"
 	},
 	"imports": {
 		"@hk/photographer-toolbox": "jsr:@hk/photographer-toolbox@^0.1.12",
