@@ -45,13 +45,12 @@ class ImageInfo extends WorkerExtension {
 		command.stdout.on('data', (data) => {
 			console.log('stdout', data);
 		});
-		// command.stderr.on('data', (data) => {
-		// 	console.warn('stderr', data);
-		// });
+		command.stderr.on('data', (data) => {
+			console.warn('stderr', data);
+		});
 		this.api = rpcChannel.getAPI();
 		this.apiProcess = process;
 	}
-
 	async refreshList(paths: string[]) {
 		ui.render(new List.List({ items: [] }));
 		if (!this.api) await this.fillApi();

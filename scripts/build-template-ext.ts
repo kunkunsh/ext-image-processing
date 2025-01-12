@@ -16,6 +16,9 @@ async function build() {
 			outdir: './dist',
 			minify: false
 		});
+		// const distFile = join(import.meta.dir, '..', 'dist', 'image-info.js');
+		// console.log(distFile);
+		// await $`cp ${distFile} "/Users/hk/Library/Application Support/sh.kunkun.desktop/extensions/image-processing/dist/image-info.js"`;
 		if (Bun.argv.includes('dev')) {
 			await refreshTemplateWorkerExtension();
 		}
