@@ -1,9 +1,10 @@
+// deno-fmt-ignore-file
 // deno-lint-ignore-file
 import type { API } from '../src/types.ts';
 import { expose } from '@kunkun/api/runtime/deno';
 import { image } from '@hk/photographer-toolbox';
 import { convertDate } from './lib.ts';
-import { ExifTool, ExifDateTime } from 'exiftool-vendored';
+import { ExifDateTime, ExifTool } from 'exiftool-vendored';
 
 export function batchSmartSetImageOriginalDate(
 	imagePaths: string[],

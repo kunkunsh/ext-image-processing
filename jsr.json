@@ -1,8 +1,9 @@
 {
 	"$schema": "https://jsr.io/schema/config-file.v1.json",
 	"name": "@kunkun/ext-image-processing",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"license": "MIT",
+	"lint": false,
 	"exports": "./mod.ts",
 	"publish": {
 		"include": [
