@@ -1,7 +1,12 @@
 {
 	"$schema": "https://schema.kunkun.sh",
 	"name": "image-processing",
-	"version": "0.0.18",
+	"version": "0.0.19",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/kunkunsh/kunkun-ext-image-processing",
+		"directory": "."
+	},
 	"kunkun": {
 		"name": "Image Processing",
 		"shortDescription": "Image Processing",
@@ -111,8 +116,14 @@
 	"type": "module",
 	"files": [
 		"build",
+		"dist",
+		"mod.ts",
+		"package.json",
+		"README.md",
+		"LICENSE",
 		"deno-src",
-		".gitignore"
+		"src/types.ts",
+		".npmrc"
 	],
 	"packageManager": "pnpm@9.15.3"
 }
