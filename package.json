@@ -1,6 +1,6 @@
 {
 	"$schema": "https://schema.kunkun.sh",
-	"name": "image-processing",
+	"name": "kunkun-ext-image-processing",
 	"version": "0.0.19",
 	"repository": {
 		"type": "git",
