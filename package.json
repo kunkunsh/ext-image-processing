@@ -1,12 +1,9 @@
 {
 	"$schema": "https://schema.kunkun.sh",
 	"name": "kunkun-ext-image-processing",
-	"version": "0.0.19",
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/kunkunsh/kunkun-ext-image-processing",
-		"directory": "."
-	},
+	"version": "0.0.20",
+	"license": "MIT",
+	"repository": "https://github.com/kunkunsh/kunkun-ext-image-processing",
 	"kunkun": {
 		"name": "Image Processing",
 		"shortDescription": "Image Processing",
@@ -73,7 +70,7 @@
 	"dependencies": {
 		"@hk/photographer-toolbox": "npm:@jsr/hk__photographer-toolbox@^0.1.12",
 		"@internationalized/date": "^3.6.0",
-		"@kksh/api": "^0.0.48",
+		"@kksh/api": "^0.0.52",
 		"@kksh/svelte5": "^0.1.12",
 		"@tanstack/table-core": "^8.20.5",
 		"bits-ui": "1.0.0-next.77",
