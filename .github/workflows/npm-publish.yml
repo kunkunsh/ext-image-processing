@@ -38,6 +38,20 @@ jobs:
         with:
           node-version: 22
           registry-url: https://registry.npmjs.org/
-      - run: npm publish --provenance --access public
+      - run: |
+          PACKAGE_NAME=$(jq -r '.name' package.json)
+            PACKAGE_VERSION=$(jq -r '.version' package.json)
+
+            # Get the version from npm registry
+            REGISTRY_VERSION=$(npm show "$PACKAGE_NAME" version)
+
+            # Compare versions
+            if [ "$PACKAGE_VERSION" == "$REGISTRY_VERSION" ]; then
+              echo "Version $PACKAGE_VERSION already exists in the npm registry."
+              exit 0
+            else
+              echo "Version $PACKAGE_VERSION does not exist in the npm registry. Proceeding..."
+              npm publish --provenance --access public
+            fi
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
