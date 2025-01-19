@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schema.kunkun.sh",
 	"name": "kunkun-ext-image-processing",
-	"version": "0.0.20",
+	"version": "0.0.21",
 	"license": "MIT",
 	"repository": "https://github.com/kunkunsh/kunkun-ext-image-processing",
 	"kunkun": {
@@ -13,7 +13,7 @@
 			"type": "iconify",
 			"value": "lucide:image"
 		},
-		"demoImages": [],
+		"demoImages": ["https://i.imgur.com/NLFXPOu.png"],
 		"permissions": [
 			"dialog:all",
 			"clipboard:read-files",
