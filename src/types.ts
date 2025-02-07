@@ -1,4 +1,5 @@
 import { image } from '@hk/photographer-toolbox';
+import { type FormatEnum } from 'sharp';
 import type { ImageMetadata } from '@hk/photographer-toolbox/types';
 
 export type ImageMetadataMod = ImageMetadata & {
@@ -18,5 +19,11 @@ export type API = {
 		imagePaths: string[],
 		baseImagePath: string,
 		targetDateIso: string
+	) => Promise<void>;
+	compressImage: (
+		imagePath: string,
+		format: keyof FormatEnum,
+		quality: number,
+		outputPath: string
 	) => Promise<void>;
 };

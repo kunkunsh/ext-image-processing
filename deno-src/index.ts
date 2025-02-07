@@ -3,6 +3,7 @@ import { expose } from '@kunkun/api/runtime/deno';
 import { image } from '@hk/photographer-toolbox';
 import { convertDate } from './lib.ts';
 import { ExifDateTime, ExifTool } from 'exiftool-vendored';
+import sharp, { FormatEnum } from 'sharp';
 
 export function batchSmartSetImageOriginalDate(
 	imagePaths: string[],
@@ -73,5 +74,13 @@ expose({
 				console.error(err);
 				throw new Error(err);
 			});
+	},
+	compressImage: async (
+		imagePath: string,
+		format: keyof FormatEnum,
+		quality: number,
+		outputPath: string
+	) => {
+		await image.compressImage(sharp(imagePath), format, quality).toFile(outputPath);
 	}
 } satisfies API);

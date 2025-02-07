@@ -1,7 +1,7 @@
 {
 	"$schema": "https://schema.kunkun.sh",
 	"name": "kunkun-ext-image-processing",
-	"version": "0.0.21",
+	"version": "0.1.0",
 	"license": "MIT",
 	"repository": "https://github.com/kunkunsh/kunkun-ext-image-processing",
 	"kunkun": {
@@ -13,7 +13,9 @@
 			"type": "iconify",
 			"value": "lucide:image"
 		},
-		"demoImages": ["https://i.imgur.com/NLFXPOu.png"],
+		"demoImages": [
+			"https://i.imgur.com/NLFXPOu.png"
+		],
 		"permissions": [
 			"dialog:all",
 			"clipboard:read-files",
@@ -70,7 +72,7 @@
 	"dependencies": {
 		"@hk/photographer-toolbox": "npm:@jsr/hk__photographer-toolbox@^0.1.12",
 		"@internationalized/date": "^3.6.0",
-		"@kksh/api": "^0.0.52",
+		"@kksh/api": "^0.1.1",
 		"@kksh/svelte5": "^0.1.12",
 		"@tanstack/table-core": "^8.20.5",
 		"bits-ui": "1.0.0-next.77",
@@ -80,6 +82,7 @@
 		"lucide-svelte": "^0.469.0",
 		"mode-watcher": "^0.5.0",
 		"paneforge": "^0.0.6",
+		"sharp": "^0.33.5",
 		"svelte-radix": "^2.0.1",
 		"tailwind-merge": "^2.6.0",
 		"tailwind-variants": "^0.3.0",

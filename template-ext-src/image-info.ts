@@ -16,10 +16,10 @@ import {
 	system,
 	toast,
 	ui,
-	WorkerExtension
-} from '@kksh/api/ui/worker';
+	TemplateUiCommand
+} from '@kksh/api/ui/template';
 
-class ImageInfo extends WorkerExtension {
+class ImageInfo extends TemplateUiCommand {
 	api: API | undefined;
 	apiProcess: Child | undefined;
 	imageMetadata: Record<string, ImageMetadata> = {};

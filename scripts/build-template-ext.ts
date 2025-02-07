@@ -1,6 +1,6 @@
 import { watch } from 'fs';
 import { join } from 'path';
-import { refreshTemplateWorkerExtension } from '@kksh/api/dev';
+import { refreshTemplateWorkerCommand } from '@kksh/api/dev';
 import { $ } from 'bun';
 
 const entrypoints = ['./template-ext-src/image-info.ts'];
@@ -20,7 +20,7 @@ async function build() {
 		// console.log(distFile);
 		// await $`cp ${distFile} "/Users/hk/Library/Application Support/sh.kunkun.desktop/extensions/image-processing/dist/image-info.js"`;
 		if (Bun.argv.includes('dev')) {
-			await refreshTemplateWorkerExtension();
+			await refreshTemplateWorkerCommand();
 		}
 	} catch (error) {
 		console.error(error);

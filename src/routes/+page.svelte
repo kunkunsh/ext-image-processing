@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { base } from '$app/paths';
 	import { NodeName } from '@kksh/api/models';
-	import { clipboard, notification, ui, toast, dialog, shell } from '@kksh/api/ui/iframe';
+	import { clipboard, notification, ui, toast, dialog, shell } from '@kksh/api/ui/custom';
 	import {
 		// Calendar,
 		ModeToggle,
